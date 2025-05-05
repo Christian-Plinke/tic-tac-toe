@@ -16,6 +16,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   
 }
 
@@ -26,12 +27,17 @@ table {
 }
 
 td {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   text-align: center;
   vertical-align: middle;
   font-size: 2em;
   border: none;
+}
+
+td:hover{
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
 
 /* Horizontale Linien */
@@ -42,4 +48,27 @@ tr:not(:last-child) td {
 /* Vertikale Linien */
 td:not(:last-child) {
   border-right: 5px solid white;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  display: block;
+  padding: 12px 24px;
+  background-color: white;
+  color: #323232;
+  font-size: 1.2em;
+
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffc000;
+  color: #323232;
 }
